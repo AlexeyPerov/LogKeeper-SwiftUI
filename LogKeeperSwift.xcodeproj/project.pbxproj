@@ -7,12 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED477FBF25D414140054A7C9 /* LogKeeperSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED477FBE25D414140054A7C9 /* LogKeeperSwiftApp.swift */; };
-		ED477FC125D414140054A7C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED477FC025D414140054A7C9 /* ContentView.swift */; };
 		ED477FC325D414150054A7C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED477FC225D414150054A7C9 /* Assets.xcassets */; };
 		ED477FC625D414150054A7C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED477FC525D414150054A7C9 /* Preview Assets.xcassets */; };
 		ED477FD125D414160054A7C9 /* LogKeeperSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED477FD025D414160054A7C9 /* LogKeeperSwiftTests.swift */; };
 		ED477FDC25D414160054A7C9 /* LogKeeperSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED477FDB25D414160054A7C9 /* LogKeeperSwiftUITests.swift */; };
+		ED477FF025D416680054A7C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED477FEF25D416680054A7C9 /* SceneDelegate.swift */; };
+		ED477FFC25D416990054A7C9 /* MockLogsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED477FF725D416990054A7C9 /* MockLogsRepository.swift */; };
+		ED477FFE25D416990054A7C9 /* LogInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED477FF925D416990054A7C9 /* LogInfoEntity.swift */; };
+		ED47800525D416B00054A7C9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47800425D416B00054A7C9 /* AppState.swift */; };
+		ED47800D25D416BC0054A7C9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47800A25D416BC0054A7C9 /* Action.swift */; };
+		ED47800E25D416BC0054A7C9 /* LogActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47800B25D416BC0054A7C9 /* LogActions.swift */; };
+		ED47801725D416CF0054A7C9 /* FluxState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47801425D416CF0054A7C9 /* FluxState.swift */; };
+		ED47801825D416CF0054A7C9 /* LogsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47801525D416CF0054A7C9 /* LogsState.swift */; };
+		ED47802225D416E50054A7C9 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47801F25D416E50054A7C9 /* Reducer.swift */; };
+		ED47802325D416E50054A7C9 /* LogStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47802025D416E50054A7C9 /* LogStateReducer.swift */; };
+		ED47802925D416FD0054A7C9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47802825D416FD0054A7C9 /* HomeView.swift */; };
+		ED47803425D417160054A7C9 /* LogDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47803025D417150054A7C9 /* LogDetailsScreen.swift */; };
+		ED47803625D417160054A7C9 /* LogsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47803225D417160054A7C9 /* LogsListScreen.swift */; };
+		ED47803725D417160054A7C9 /* LogCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47803325D417160054A7C9 /* LogCard.swift */; };
+		ED47804025D4171A0054A7C9 /* OptionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47803C25D4171A0054A7C9 /* OptionsList.swift */; };
+		ED47804125D4171A0054A7C9 /* OptionsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47803D25D4171A0054A7C9 /* OptionsCard.swift */; };
+		ED47805725D41A660054A7C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47805625D41A660054A7C9 /* AppDelegate.swift */; };
+		ED47806525D41F820054A7C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED47806425D41F820054A7C9 /* LaunchScreen.storyboard */; };
+		ED47807125D452EB0054A7C9 /* LogsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47807025D452EB0054A7C9 /* LogsRepository.swift */; };
+		ED47807925D454D40054A7C9 /* FirebaseLogsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47807825D454D40054A7C9 /* FirebaseLogsRepository.swift */; };
+		ED47808425D462A00054A7C9 /* ProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47808325D462A00054A7C9 /* ProjectCard.swift */; };
+		ED8E442B25D58CCD00B182A9 /* LogContentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E442A25D58CCD00B182A9 /* LogContentEntity.swift */; };
+		ED8E443825D58DC900B182A9 /* LogEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E443725D58DC900B182A9 /* LogEntity.swift */; };
+		ED8E444F25D5B55B00B182A9 /* LogContentsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E444E25D5B55B00B182A9 /* LogContentsState.swift */; };
+		ED8E445425D5B60F00B182A9 /* LogContentsStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E445325D5B60F00B182A9 /* LogContentsStateReducer.swift */; };
+		ED8E445925D5B63E00B182A9 /* LogContentsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E445825D5B63E00B182A9 /* LogContentsActions.swift */; };
+		ED8E446525D5B9E800B182A9 /* LogContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E446425D5B9E800B182A9 /* LogContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +59,6 @@
 
 /* Begin PBXFileReference section */
 		ED477FBB25D414140054A7C9 /* LogKeeperSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogKeeperSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED477FBE25D414140054A7C9 /* LogKeeperSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogKeeperSwiftApp.swift; sourceTree = "<group>"; };
-		ED477FC025D414140054A7C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ED477FC225D414150054A7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED477FC525D414150054A7C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED477FC725D414150054A7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +68,33 @@
 		ED477FD725D414160054A7C9 /* LogKeeperSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogKeeperSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED477FDB25D414160054A7C9 /* LogKeeperSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogKeeperSwiftUITests.swift; sourceTree = "<group>"; };
 		ED477FDD25D414160054A7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED477FEF25D416680054A7C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ED477FF725D416990054A7C9 /* MockLogsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLogsRepository.swift; sourceTree = "<group>"; };
+		ED477FF925D416990054A7C9 /* LogInfoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInfoEntity.swift; sourceTree = "<group>"; };
+		ED47800425D416B00054A7C9 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		ED47800A25D416BC0054A7C9 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		ED47800B25D416BC0054A7C9 /* LogActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogActions.swift; sourceTree = "<group>"; };
+		ED47801425D416CF0054A7C9 /* FluxState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluxState.swift; sourceTree = "<group>"; };
+		ED47801525D416CF0054A7C9 /* LogsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogsState.swift; sourceTree = "<group>"; };
+		ED47801F25D416E50054A7C9 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		ED47802025D416E50054A7C9 /* LogStateReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogStateReducer.swift; sourceTree = "<group>"; };
+		ED47802825D416FD0054A7C9 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ED47803025D417150054A7C9 /* LogDetailsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDetailsScreen.swift; sourceTree = "<group>"; };
+		ED47803225D417160054A7C9 /* LogsListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogsListScreen.swift; sourceTree = "<group>"; };
+		ED47803325D417160054A7C9 /* LogCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogCard.swift; sourceTree = "<group>"; };
+		ED47803C25D4171A0054A7C9 /* OptionsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsList.swift; sourceTree = "<group>"; };
+		ED47803D25D4171A0054A7C9 /* OptionsCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsCard.swift; sourceTree = "<group>"; };
+		ED47805625D41A660054A7C9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED47806425D41F820054A7C9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED47807025D452EB0054A7C9 /* LogsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsRepository.swift; sourceTree = "<group>"; };
+		ED47807825D454D40054A7C9 /* FirebaseLogsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLogsRepository.swift; sourceTree = "<group>"; };
+		ED47808325D462A00054A7C9 /* ProjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCard.swift; sourceTree = "<group>"; };
+		ED8E442A25D58CCD00B182A9 /* LogContentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogContentEntity.swift; sourceTree = "<group>"; };
+		ED8E443725D58DC900B182A9 /* LogEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntity.swift; sourceTree = "<group>"; };
+		ED8E444E25D5B55B00B182A9 /* LogContentsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogContentsState.swift; sourceTree = "<group>"; };
+		ED8E445325D5B60F00B182A9 /* LogContentsStateReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogContentsStateReducer.swift; sourceTree = "<group>"; };
+		ED8E445825D5B63E00B182A9 /* LogContentsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogContentsActions.swift; sourceTree = "<group>"; };
+		ED8E446425D5B9E800B182A9 /* LogContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +125,7 @@
 		ED477FB225D414140054A7C9 = {
 			isa = PBXGroup;
 			children = (
+				ED47806425D41F820054A7C9 /* LaunchScreen.storyboard */,
 				ED477FBD25D414140054A7C9 /* LogKeeperSwift */,
 				ED477FCF25D414160054A7C9 /* LogKeeperSwiftTests */,
 				ED477FDA25D414160054A7C9 /* LogKeeperSwiftUITests */,
@@ -95,8 +146,12 @@
 		ED477FBD25D414140054A7C9 /* LogKeeperSwift */ = {
 			isa = PBXGroup;
 			children = (
-				ED477FBE25D414140054A7C9 /* LogKeeperSwiftApp.swift */,
-				ED477FC025D414140054A7C9 /* ContentView.swift */,
+				ED47806F25D452D40054A7C9 /* Repositories */,
+				ED47802725D416F10054A7C9 /* Views */,
+				ED47800325D416A30054A7C9 /* States */,
+				ED477FF525D4168F0054A7C9 /* Models */,
+				ED477FEF25D416680054A7C9 /* SceneDelegate.swift */,
+				ED47805625D41A660054A7C9 /* AppDelegate.swift */,
 				ED477FC225D414150054A7C9 /* Assets.xcassets */,
 				ED477FC725D414150054A7C9 /* Info.plist */,
 				ED477FC425D414150054A7C9 /* Preview Content */,
@@ -128,6 +183,98 @@
 				ED477FDD25D414160054A7C9 /* Info.plist */,
 			);
 			path = LogKeeperSwiftUITests;
+			sourceTree = "<group>";
+		};
+		ED477FF525D4168F0054A7C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED477FF925D416990054A7C9 /* LogInfoEntity.swift */,
+				ED8E442A25D58CCD00B182A9 /* LogContentEntity.swift */,
+				ED8E443725D58DC900B182A9 /* LogEntity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED47800325D416A30054A7C9 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				ED47801D25D416DC0054A7C9 /* Reducers */,
+				ED47801325D416C40054A7C9 /* SubState */,
+				ED47800925D416B40054A7C9 /* Actions */,
+				ED47800425D416B00054A7C9 /* AppState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		ED47800925D416B40054A7C9 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				ED47800A25D416BC0054A7C9 /* Action.swift */,
+				ED47800B25D416BC0054A7C9 /* LogActions.swift */,
+				ED8E445825D5B63E00B182A9 /* LogContentsActions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		ED47801325D416C40054A7C9 /* SubState */ = {
+			isa = PBXGroup;
+			children = (
+				ED47801425D416CF0054A7C9 /* FluxState.swift */,
+				ED47801525D416CF0054A7C9 /* LogsState.swift */,
+				ED8E444E25D5B55B00B182A9 /* LogContentsState.swift */,
+			);
+			path = SubState;
+			sourceTree = "<group>";
+		};
+		ED47801D25D416DC0054A7C9 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				ED47801F25D416E50054A7C9 /* Reducer.swift */,
+				ED47802025D416E50054A7C9 /* LogStateReducer.swift */,
+				ED8E445325D5B60F00B182A9 /* LogContentsStateReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		ED47802725D416F10054A7C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED8E445D25D5B7A600B182A9 /* Logs */,
+				ED47802E25D417090054A7C9 /* Options */,
+				ED47802825D416FD0054A7C9 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED47802E25D417090054A7C9 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				ED47803C25D4171A0054A7C9 /* OptionsList.swift */,
+				ED47803D25D4171A0054A7C9 /* OptionsCard.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		ED47806F25D452D40054A7C9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				ED477FF725D416990054A7C9 /* MockLogsRepository.swift */,
+				ED47807025D452EB0054A7C9 /* LogsRepository.swift */,
+				ED47807825D454D40054A7C9 /* FirebaseLogsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		ED8E445D25D5B7A600B182A9 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				ED47803025D417150054A7C9 /* LogDetailsScreen.swift */,
+				ED47803225D417160054A7C9 /* LogsListScreen.swift */,
+				ED47803325D417160054A7C9 /* LogCard.swift */,
+				ED47808325D462A00054A7C9 /* ProjectCard.swift */,
+				ED8E446425D5B9E800B182A9 /* LogContentView.swift */,
+			);
+			path = Logs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED477FC625D414150054A7C9 /* Preview Assets.xcassets in Resources */,
+				ED47806525D41F820054A7C9 /* LaunchScreen.storyboard in Resources */,
 				ED477FC325D414150054A7C9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +407,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED477FC125D414140054A7C9 /* ContentView.swift in Sources */,
-				ED477FBF25D414140054A7C9 /* LogKeeperSwiftApp.swift in Sources */,
+				ED47801825D416CF0054A7C9 /* LogsState.swift in Sources */,
+				ED47802325D416E50054A7C9 /* LogStateReducer.swift in Sources */,
+				ED47800D25D416BC0054A7C9 /* Action.swift in Sources */,
+				ED8E446525D5B9E800B182A9 /* LogContentView.swift in Sources */,
+				ED47800525D416B00054A7C9 /* AppState.swift in Sources */,
+				ED47802225D416E50054A7C9 /* Reducer.swift in Sources */,
+				ED47800E25D416BC0054A7C9 /* LogActions.swift in Sources */,
+				ED47808425D462A00054A7C9 /* ProjectCard.swift in Sources */,
+				ED47804125D4171A0054A7C9 /* OptionsCard.swift in Sources */,
+				ED8E444F25D5B55B00B182A9 /* LogContentsState.swift in Sources */,
+				ED8E442B25D58CCD00B182A9 /* LogContentEntity.swift in Sources */,
+				ED47801725D416CF0054A7C9 /* FluxState.swift in Sources */,
+				ED47807125D452EB0054A7C9 /* LogsRepository.swift in Sources */,
+				ED47803425D417160054A7C9 /* LogDetailsScreen.swift in Sources */,
+				ED47805725D41A660054A7C9 /* AppDelegate.swift in Sources */,
+				ED47807925D454D40054A7C9 /* FirebaseLogsRepository.swift in Sources */,
+				ED477FFC25D416990054A7C9 /* MockLogsRepository.swift in Sources */,
+				ED8E443825D58DC900B182A9 /* LogEntity.swift in Sources */,
+				ED477FF025D416680054A7C9 /* SceneDelegate.swift in Sources */,
+				ED8E445925D5B63E00B182A9 /* LogContentsActions.swift in Sources */,
+				ED477FFE25D416990054A7C9 /* LogInfoEntity.swift in Sources */,
+				ED8E445425D5B60F00B182A9 /* LogContentsStateReducer.swift in Sources */,
+				ED47803625D417160054A7C9 /* LogsListScreen.swift in Sources */,
+				ED47804025D4171A0054A7C9 /* OptionsList.swift in Sources */,
+				ED47802925D416FD0054A7C9 /* HomeView.swift in Sources */,
+				ED47803725D417160054A7C9 /* LogCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

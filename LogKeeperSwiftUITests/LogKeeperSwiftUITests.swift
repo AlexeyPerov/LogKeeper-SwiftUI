@@ -1,10 +1,3 @@
-//
-//  LogKeeperSwiftUITests.swift
-//  LogKeeperSwiftUITests
-//
-//  Created by Alexey Perov on 10.02.2021.
-//
-
 import XCTest
 
 class LogKeeperSwiftUITests: XCTestCase {
