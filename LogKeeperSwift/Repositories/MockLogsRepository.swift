@@ -2,7 +2,7 @@ import Foundation
 
 struct MockLogsRepository : LogsRepository {    
     func initialize() {
-        print("initialize mock logs repository")
+        print("Initialize mock logs repository")
     }
     
     func getProjects(completionHandler: @escaping (Result<[String], RequestError>) -> Void) {

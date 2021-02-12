@@ -13,7 +13,7 @@ struct LogCard: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: CGFloat(8.0)) {
-                Text(log.title).font(.title)
+                Text(log.title).font(.title).lineLimit(2)
                 Text(log.author)
                     .foregroundColor(.secondary)
                 Text(dateFormatter.string(from: log.createdAt))

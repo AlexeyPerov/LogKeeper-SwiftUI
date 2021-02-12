@@ -1,6 +1,6 @@
 # LogKeeperSwiftUI
 
-Swift LogKeeper app implementation which uses:
+Swift LogKeeper app (https://github.com/AlexeyPerov/Flutter-Log-Keeper-Tool) implementation which uses:
 
 - SwiftUI
 - Redux state store

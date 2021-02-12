@@ -34,6 +34,9 @@
 		ED47808425D462A00054A7C9 /* ProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47808325D462A00054A7C9 /* ProjectCard.swift */; };
 		ED4953F125D68B2A00A45A29 /* LoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4953F025D68B2A00A45A29 /* LoadState.swift */; };
 		ED49541325D6CFCF00A45A29 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = ED49541225D6CFCF00A45A29 /* Swinject */; };
+		ED49542125D701F200A45A29 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ED49542025D701F200A45A29 /* FirebaseFirestore */; };
+		ED49542325D701F200A45A29 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = ED49542225D701F200A45A29 /* FirebaseFirestoreSwift-Beta */; };
+		ED49542825D7020700A45A29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED49542725D7020700A45A29 /* GoogleService-Info.plist */; };
 		ED8E442B25D58CCD00B182A9 /* LogContentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E442A25D58CCD00B182A9 /* LogContentEntity.swift */; };
 		ED8E443825D58DC900B182A9 /* LogEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E443725D58DC900B182A9 /* LogEntity.swift */; };
 		ED8E444F25D5B55B00B182A9 /* LogContentsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E444E25D5B55B00B182A9 /* LogContentsState.swift */; };
@@ -92,6 +95,7 @@
 		ED47807825D454D40054A7C9 /* FirebaseLogsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLogsRepository.swift; sourceTree = "<group>"; };
 		ED47808325D462A00054A7C9 /* ProjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCard.swift; sourceTree = "<group>"; };
 		ED4953F025D68B2A00A45A29 /* LoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadState.swift; sourceTree = "<group>"; };
+		ED49542725D7020700A45A29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED8E442A25D58CCD00B182A9 /* LogContentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogContentEntity.swift; sourceTree = "<group>"; };
 		ED8E443725D58DC900B182A9 /* LogEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntity.swift; sourceTree = "<group>"; };
 		ED8E444E25D5B55B00B182A9 /* LogContentsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogContentsState.swift; sourceTree = "<group>"; };
@@ -105,7 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED49542325D701F200A45A29 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				ED49541325D6CFCF00A45A29 /* Swinject in Frameworks */,
+				ED49542125D701F200A45A29 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				ED47806425D41F820054A7C9 /* LaunchScreen.storyboard */,
+				ED49542725D7020700A45A29 /* GoogleService-Info.plist */,
 				ED477FBD25D414140054A7C9 /* LogKeeperSwift */,
 				ED477FCF25D414160054A7C9 /* LogKeeperSwiftTests */,
 				ED477FDA25D414160054A7C9 /* LogKeeperSwiftUITests */,
@@ -308,6 +315,8 @@
 			name = LogKeeperSwift;
 			packageProductDependencies = (
 				ED49541225D6CFCF00A45A29 /* Swinject */,
+				ED49542025D701F200A45A29 /* FirebaseFirestore */,
+				ED49542225D701F200A45A29 /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = LogKeeperSwift;
 			productReference = ED477FBB25D414140054A7C9 /* LogKeeperSwift.app */;
@@ -382,6 +391,7 @@
 			mainGroup = ED477FB225D414140054A7C9;
 			packageReferences = (
 				ED49541125D6CFCF00A45A29 /* XCRemoteSwiftPackageReference "Swinject" */,
+				ED49541F25D701F200A45A29 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = ED477FBC25D414140054A7C9 /* Products */;
 			projectDirPath = "";
@@ -400,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED477FC625D414150054A7C9 /* Preview Assets.xcassets in Resources */,
+				ED49542825D7020700A45A29 /* GoogleService-Info.plist in Resources */,
 				ED47806525D41F820054A7C9 /* LaunchScreen.storyboard in Resources */,
 				ED477FC325D414150054A7C9 /* Assets.xcassets in Resources */,
 			);
@@ -776,6 +787,14 @@
 				minimumVersion = 2.7.1;
 			};
 		};
+		ED49541F25D701F200A45A29 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.6.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -783,6 +802,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ED49541125D6CFCF00A45A29 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		ED49542025D701F200A45A29 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED49541F25D701F200A45A29 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		ED49542225D701F200A45A29 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED49541F25D701F200A45A29 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

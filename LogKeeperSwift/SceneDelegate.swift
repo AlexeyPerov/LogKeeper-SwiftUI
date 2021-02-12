@@ -5,7 +5,7 @@ import Swinject
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let container: Container = {
         let container = Container()
-        container.register(LogsRepository.self) { _ in MockLogsRepository() }.inObjectScope(.container)
+        container.register(LogsRepository.self) { _ in FirebaseLogsRepository() }.inObjectScope(.container)
         return container
     }()
     
@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         logsRepository?.initialize()
         
         if let windowScene = scene as? UIWindowScene {
-            print("creating AppState")
+            print("Creating AppState")
             let store = AppState(repository: logsRepository!)
             
             let window = UIWindow(windowScene: windowScene)
