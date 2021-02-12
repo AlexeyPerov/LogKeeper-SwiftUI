@@ -9,11 +9,11 @@ struct LogContentsStateReducer: Reducer {
             state.loadState = LoadState.loaded
         }
         
-        if let action = action as? LogContentsActions.LoadStarted {
+        if action is LogContentsActions.LoadStarted {
             state.loadState = LoadState.loading
         }
         
-        if let action = action as? LogContentsActions.LogReleased {
+        if action is LogContentsActions.LogReleased {
             state.loadState = LoadState.idle
         }
         

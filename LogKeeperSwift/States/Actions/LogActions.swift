@@ -2,14 +2,14 @@ import Foundation
 
 struct LogActions {
     struct GetProjectsRequest: Action {
-        init() {
-            MockLogsRepository.shared.getProjects() {
+        init(store: AppState) {
+            store.repository.getProjects() {
                 (result: Result<[String], RequestError>) in
                 switch result {
                 case let .success(response):
                     store.dispatch(action: ProjectsUpdated(projects: response))
                     if (response.count > 0 && store.logsState.selectedProject.isEmpty) {
-                        store.dispatch(action: SelectProjectRequest(project: response[0]))
+                        store.dispatch(action: SelectProjectRequest(store: store, project: response[0]))
                     }
                     break
                 case .failure:
@@ -20,11 +20,11 @@ struct LogActions {
     }
             
     struct SelectProjectRequest: Action {
-        init(project: String) {
+        init(store: AppState, project: String) {
             store.dispatch(action: SelectedProjectUpdated(project: project))
             store.dispatch(action: LogsLoadStarted())
             
-            MockLogsRepository.shared.getLogsForProject(project: project) {
+            store.repository.getLogsForProject(project: project) {
                 (result: Result<[LogInfoEntity], RequestError>) in
                 switch result {
                 case let .success(response):

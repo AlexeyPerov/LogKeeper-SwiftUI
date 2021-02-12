@@ -26,7 +26,7 @@ struct ProjectCard: View {
         }
         .frame(width: 150, height: 120)
         .onTapGesture {
-            store.dispatch(action: LogActions.SelectProjectRequest(project: project))
+            store.dispatch(action: LogActions.SelectProjectRequest(store: store, project: project))
         }
     }
 }

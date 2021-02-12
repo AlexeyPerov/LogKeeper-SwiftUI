@@ -1,7 +1,9 @@
 import Foundation
 
-struct MockLogsRepository {
-    static let shared = MockLogsRepository()
+struct MockLogsRepository : LogsRepository {    
+    func initialize() {
+        print("initialize mock logs repository")
+    }
     
     func getProjects(completionHandler: @escaping (Result<[String], RequestError>) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {

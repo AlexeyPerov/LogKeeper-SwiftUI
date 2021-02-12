@@ -11,7 +11,7 @@ struct LogDetailsScreen: View {
             if (store.logContentsState.loadState == LoadState.idle) {
                 Text("...")
                     .onAppear {
-                        store.dispatch(action: LogContentsActions.LoadLogRequest(project: project, id: id))
+                        store.dispatch(action: LogContentsActions.LoadLogRequest(store: store, project: project, id: id))
                     }
             } else if (store.logContentsState.loadState == LoadState.loading) {
                 ProgressView()

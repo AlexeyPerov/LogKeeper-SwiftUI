@@ -42,7 +42,7 @@ struct LogsListScreen: View {
         .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
             if (!appeared) {
-                store.dispatch(action: LogActions.GetProjectsRequest())
+                store.dispatch(action: LogActions.GetProjectsRequest(store: store))
             } else {
                 appeared = true;
             }

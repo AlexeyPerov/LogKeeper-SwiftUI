@@ -8,9 +8,12 @@ final class AppState: ObservableObject {
     @Published var logsState: LogsState
     @Published var logContentsState: LogContentsState
     
-    init(logsState: LogsState = LogsState(selectedProject: "", projects: [], logs: []), logContentsState: LogContentsState = LogContentsState(log: emptyLog, loadState: LoadState.idle)) {
+    let repository: LogsRepository
+    
+    init(repository: LogsRepository, logsState: LogsState = LogsState(selectedProject: "", projects: [], logs: []), logContentsState: LogContentsState = LogContentsState(log: emptyLog, loadState: LoadState.idle)) {
         self.logsState = logsState
         self.logContentsState = logContentsState
+        self.repository = repository
     }
     
     func dispatch(action: Action) {
@@ -26,10 +29,11 @@ final class AppState: ObservableObject {
     }
 }
 
-let store = AppState()
-
 #if DEBUG
+let mockRepository = MockLogsRepository()
+
 let mockStore = AppState(
+    repository: mockRepository,
     logsState: LogsState(selectedProject: "", projects: ["1", "2"], logs: testLogInfoModels)
 )
 #endif

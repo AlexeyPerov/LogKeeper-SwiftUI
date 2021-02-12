@@ -2,9 +2,9 @@ import Foundation
 
 struct LogContentsActions {
     struct LoadLogRequest: Action {
-        init(project: String, id: String) {
+        init(store: AppState, project: String, id: String) {
             store.dispatch(action: LoadStarted())
-            MockLogsRepository.shared.getLog(project: project, id: id) {
+            store.repository.getLog(project: project, id: id) {
                 (result: Result<LogEntity, RequestError>) in
                 switch result {
                 case let .success(response):

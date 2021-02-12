@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,6 +33,7 @@
 		ED47807925D454D40054A7C9 /* FirebaseLogsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47807825D454D40054A7C9 /* FirebaseLogsRepository.swift */; };
 		ED47808425D462A00054A7C9 /* ProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47808325D462A00054A7C9 /* ProjectCard.swift */; };
 		ED4953F125D68B2A00A45A29 /* LoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4953F025D68B2A00A45A29 /* LoadState.swift */; };
+		ED49541325D6CFCF00A45A29 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = ED49541225D6CFCF00A45A29 /* Swinject */; };
 		ED8E442B25D58CCD00B182A9 /* LogContentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E442A25D58CCD00B182A9 /* LogContentEntity.swift */; };
 		ED8E443825D58DC900B182A9 /* LogEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E443725D58DC900B182A9 /* LogEntity.swift */; };
 		ED8E444F25D5B55B00B182A9 /* LogContentsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E444E25D5B55B00B182A9 /* LogContentsState.swift */; };
@@ -104,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED49541325D6CFCF00A45A29 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +306,9 @@
 			dependencies = (
 			);
 			name = LogKeeperSwift;
+			packageProductDependencies = (
+				ED49541225D6CFCF00A45A29 /* Swinject */,
+			);
 			productName = LogKeeperSwift;
 			productReference = ED477FBB25D414140054A7C9 /* LogKeeperSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -375,6 +380,9 @@
 				Base,
 			);
 			mainGroup = ED477FB225D414140054A7C9;
+			packageReferences = (
+				ED49541125D6CFCF00A45A29 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = ED477FBC25D414140054A7C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -758,6 +766,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED49541125D6CFCF00A45A29 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED49541225D6CFCF00A45A29 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED49541125D6CFCF00A45A29 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED477FB325D414140054A7C9 /* Project object */;
 }

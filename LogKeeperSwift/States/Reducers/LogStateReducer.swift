@@ -13,7 +13,7 @@ struct LogStateReducer: Reducer {
             state.selectedProject = action.project
         }
                 
-        if let action = action as? LogActions.LogsLoadStarted {
+        if action is LogActions.LogsLoadStarted {
             state.logsLoadState = LoadState.loading
         }
 
