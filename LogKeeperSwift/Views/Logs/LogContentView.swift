@@ -32,8 +32,11 @@ struct LogContentView: View {
                 
                 Divider()
                 
-                Text(log.data.contents)
-                    .padding(.top)
+                let lines = log.data.contents.split(whereSeparator: \.isNewline)
+                   
+                ForEach(0 ..< lines.count) { value in
+                    Text(lines[value])
+                }
             }
             .padding()
         }
