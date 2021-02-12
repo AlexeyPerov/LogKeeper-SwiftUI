@@ -6,10 +6,9 @@ struct OptionsListScreen: View {
     var body: some View {
         NavigationView {
             List {
-                // TODO receive link from repository
                 OptionsCard(option: Option(title: "Admin Panel", description: "Firebase", imageName: "square.and.arrow.up"),
                                            tapCallback: {
-                                            guard let url = URL(string: "https://stackoverflow.com") else { return }
+                                            guard let url = URL(string: store.repository.getAdminLink()) else { return }
                                             UIApplication.shared.open(url)
                                            })
             }

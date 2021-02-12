@@ -4,7 +4,7 @@ struct MockLogsRepository : LogsRepository {
     func initialize() {
         print("Initialize mock logs repository")
     }
-    
+        
     func getProjects(completionHandler: @escaping (Result<[String], RequestError>) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             let result = ["Project 1", "Project 2", "Project 3"]
@@ -30,6 +30,10 @@ struct MockLogsRepository : LogsRepository {
                 project: project, info: testLogInfoModels[0], data: LogContentEntity(id: "0", contents: "mock contents for " + id))
             completionHandler(.success(result))
         }
+    }
+    
+    func getAdminLink() -> String {
+        return "https://firebase.google.com/"
     }
 }
 

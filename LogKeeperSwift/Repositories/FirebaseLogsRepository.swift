@@ -6,10 +6,10 @@ class FirebaseLogsRepository: LogsRepository {
     func initialize() {
         FirebaseApp.configure()
     }
-    
+        
     func getProjects(completionHandler: @escaping (Result<[String], RequestError>) -> Void) {
         let query = Firestore.firestore().collection("projects")
-        
+   
         query.addSnapshotListener {(snapshot, error) in
             guard let snapshot = snapshot else {
                 print("Error fetching firestore: \(error!)")
@@ -95,6 +95,10 @@ class FirebaseLogsRepository: LogsRepository {
                 completionHandler(.success(result))
             }
         }
+    }
+    
+    func getAdminLink() -> String {
+        return "https://console.firebase.google.com/u/2/project/" + (FirebaseApp.app()?.options.projectID)! + "/overview"
     }
     
     func getProjectCollectionName(project: String) -> String {
