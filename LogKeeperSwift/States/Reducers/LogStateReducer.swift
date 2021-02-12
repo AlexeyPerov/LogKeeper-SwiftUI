@@ -12,8 +12,13 @@ struct LogStateReducer: Reducer {
         if let action = action as? LogActions.SelectedProjectUpdated {
             state.selectedProject = action.project
         }
+                
+        if let action = action as? LogActions.LogsLoadStarted {
+            state.logsLoadState = LoadState.loading
+        }
 
         if let action = action as? LogActions.LogsUpdated {
+            state.logsLoadState = LoadState.loaded
             state.logs = action.logs
         }
 

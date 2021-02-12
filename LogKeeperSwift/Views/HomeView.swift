@@ -10,15 +10,11 @@ struct HomeView: View {
     }
     
     var body: some View {
-        if (store.logsState.hasError) {
-            Text("Error loading logs")
-        } else {
-            TabView(selection: self.$selectedTab) {
-                LogsListScreen().tabItem{ VStack { Image(systemName: "checkmark.circle.fill"); Text("Logs") } }.tag(Tab.logs)
-                OptionsList().tabItem{ VStack { Image(systemName: "pencil.circle"); Text("Options") } }.tag(Tab.options)
-            }
-            .edgesIgnoringSafeArea(.top)
+        TabView(selection: self.$selectedTab) {
+            LogsListScreen().tabItem{ VStack { Image(systemName: "checkmark.circle.fill"); Text("Logs") } }.tag(Tab.logs)
+            OptionsListScreen().tabItem{ VStack { Image(systemName: "pencil.circle"); Text("Options") } }.tag(Tab.options)
         }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 

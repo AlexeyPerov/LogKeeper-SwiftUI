@@ -22,6 +22,7 @@ struct LogActions {
     struct SelectProjectRequest: Action {
         init(project: String) {
             store.dispatch(action: SelectedProjectUpdated(project: project))
+            store.dispatch(action: LogsLoadStarted())
             
             MockLogsRepository.shared.getLogsForProject(project: project) {
                 (result: Result<[LogInfoEntity], RequestError>) in
@@ -44,6 +45,9 @@ struct LogActions {
         let projects: [String]
     }
         
+    struct LogsLoadStarted: Action {
+    }
+    
     struct LogsUpdated: Action {
         let logs: [LogInfoEntity]
     }

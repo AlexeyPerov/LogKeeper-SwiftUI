@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct OptionsList: View {
+struct OptionsListScreen: View {
     @EnvironmentObject var store: AppState
 
     var body: some View {
@@ -19,9 +19,9 @@ struct OptionsList: View {
 }
 
 #if DEBUG
-    struct OptionsList_Previews: PreviewProvider {
+    struct OptionsListScreen_Previews: PreviewProvider {
         static var previews: some View {
-            OptionsList().environmentObject(mockStore)
+            OptionsListScreen().environmentObject(mockStore)
         }
     }
 #endif

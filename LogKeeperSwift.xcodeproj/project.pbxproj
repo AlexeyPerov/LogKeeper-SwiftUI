@@ -25,13 +25,14 @@
 		ED47803425D417160054A7C9 /* LogDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47803025D417150054A7C9 /* LogDetailsScreen.swift */; };
 		ED47803625D417160054A7C9 /* LogsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47803225D417160054A7C9 /* LogsListScreen.swift */; };
 		ED47803725D417160054A7C9 /* LogCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47803325D417160054A7C9 /* LogCard.swift */; };
-		ED47804025D4171A0054A7C9 /* OptionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47803C25D4171A0054A7C9 /* OptionsList.swift */; };
+		ED47804025D4171A0054A7C9 /* OptionsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47803C25D4171A0054A7C9 /* OptionsListScreen.swift */; };
 		ED47804125D4171A0054A7C9 /* OptionsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47803D25D4171A0054A7C9 /* OptionsCard.swift */; };
 		ED47805725D41A660054A7C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47805625D41A660054A7C9 /* AppDelegate.swift */; };
 		ED47806525D41F820054A7C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED47806425D41F820054A7C9 /* LaunchScreen.storyboard */; };
 		ED47807125D452EB0054A7C9 /* LogsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47807025D452EB0054A7C9 /* LogsRepository.swift */; };
 		ED47807925D454D40054A7C9 /* FirebaseLogsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47807825D454D40054A7C9 /* FirebaseLogsRepository.swift */; };
 		ED47808425D462A00054A7C9 /* ProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47808325D462A00054A7C9 /* ProjectCard.swift */; };
+		ED4953F125D68B2A00A45A29 /* LoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4953F025D68B2A00A45A29 /* LoadState.swift */; };
 		ED8E442B25D58CCD00B182A9 /* LogContentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E442A25D58CCD00B182A9 /* LogContentEntity.swift */; };
 		ED8E443825D58DC900B182A9 /* LogEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E443725D58DC900B182A9 /* LogEntity.swift */; };
 		ED8E444F25D5B55B00B182A9 /* LogContentsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E444E25D5B55B00B182A9 /* LogContentsState.swift */; };
@@ -82,13 +83,14 @@
 		ED47803025D417150054A7C9 /* LogDetailsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDetailsScreen.swift; sourceTree = "<group>"; };
 		ED47803225D417160054A7C9 /* LogsListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogsListScreen.swift; sourceTree = "<group>"; };
 		ED47803325D417160054A7C9 /* LogCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogCard.swift; sourceTree = "<group>"; };
-		ED47803C25D4171A0054A7C9 /* OptionsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsList.swift; sourceTree = "<group>"; };
+		ED47803C25D4171A0054A7C9 /* OptionsListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsListScreen.swift; sourceTree = "<group>"; };
 		ED47803D25D4171A0054A7C9 /* OptionsCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsCard.swift; sourceTree = "<group>"; };
 		ED47805625D41A660054A7C9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED47806425D41F820054A7C9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED47807025D452EB0054A7C9 /* LogsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsRepository.swift; sourceTree = "<group>"; };
 		ED47807825D454D40054A7C9 /* FirebaseLogsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLogsRepository.swift; sourceTree = "<group>"; };
 		ED47808325D462A00054A7C9 /* ProjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCard.swift; sourceTree = "<group>"; };
+		ED4953F025D68B2A00A45A29 /* LoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadState.swift; sourceTree = "<group>"; };
 		ED8E442A25D58CCD00B182A9 /* LogContentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogContentEntity.swift; sourceTree = "<group>"; };
 		ED8E443725D58DC900B182A9 /* LogEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntity.swift; sourceTree = "<group>"; };
 		ED8E444E25D5B55B00B182A9 /* LogContentsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogContentsState.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		ED47800325D416A30054A7C9 /* States */ = {
 			isa = PBXGroup;
 			children = (
+				ED4953F525D68B3100A45A29 /* Common */,
 				ED47801D25D416DC0054A7C9 /* Reducers */,
 				ED47801325D416C40054A7C9 /* SubState */,
 				ED47800925D416B40054A7C9 /* Actions */,
@@ -249,7 +252,7 @@
 		ED47802E25D417090054A7C9 /* Options */ = {
 			isa = PBXGroup;
 			children = (
-				ED47803C25D4171A0054A7C9 /* OptionsList.swift */,
+				ED47803C25D4171A0054A7C9 /* OptionsListScreen.swift */,
 				ED47803D25D4171A0054A7C9 /* OptionsCard.swift */,
 			);
 			path = Options;
@@ -263,6 +266,14 @@
 				ED47807825D454D40054A7C9 /* FirebaseLogsRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		ED4953F525D68B3100A45A29 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ED4953F025D68B2A00A45A29 /* LoadState.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		ED8E445D25D5B7A600B182A9 /* Logs */ = {
@@ -430,7 +441,8 @@
 				ED477FFE25D416990054A7C9 /* LogInfoEntity.swift in Sources */,
 				ED8E445425D5B60F00B182A9 /* LogContentsStateReducer.swift in Sources */,
 				ED47803625D417160054A7C9 /* LogsListScreen.swift in Sources */,
-				ED47804025D4171A0054A7C9 /* OptionsList.swift in Sources */,
+				ED47804025D4171A0054A7C9 /* OptionsListScreen.swift in Sources */,
+				ED4953F125D68B2A00A45A29 /* LoadState.swift in Sources */,
 				ED47802925D416FD0054A7C9 /* HomeView.swift in Sources */,
 				ED47803725D417160054A7C9 /* LogCard.swift in Sources */,
 			);

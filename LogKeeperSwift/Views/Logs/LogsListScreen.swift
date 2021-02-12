@@ -30,7 +30,12 @@ struct LogsListScreen: View {
         NavigationView {
             List {
                 projectsSection
-                logsSection
+                
+                if (store.logsState.logsLoadState == LoadState.loading) {
+                    ProgressView()
+                } else {
+                    logsSection
+                }
             }
             .navigationBarTitle(Text("Logs"))
         }

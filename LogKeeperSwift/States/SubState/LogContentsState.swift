@@ -9,7 +9,3 @@ struct LogContentsState: FluxState {
         self.loadState = loadState
     }
 }
-
-enum LoadState: Int {
-    case idle, loading, loaded
-}
