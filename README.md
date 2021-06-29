@@ -1,6 +1,8 @@
-# LogKeeperSwiftUI
+# LogKeeper iOS native app (SwiftUI)
 
-Swift LogKeeper app (https://github.com/AlexeyPerov/Flutter-Log-Keeper-Tool) implementation which uses:
+See full app description [here](https://github.com/AlexeyPerov/Flutter-Log-Keeper-Tool).
+
+This implementation uses:
 
 - SwiftUI
 - Redux state store
@@ -10,5 +12,5 @@ Swift LogKeeper app (https://github.com/AlexeyPerov/Flutter-Log-Keeper-Tool) imp
 - Swift Package Manager
 
 SPM packages used:
-- https://github.com/Swinject/Swinject.git
-- https://github.com/firebase/firebase-ios-sdk.git
+- [Swinject](https://github.com/Swinject/Swinject.git)
+- [Firebase iOS](https://github.com/firebase/firebase-ios-sdk.git)
